@@ -1,0 +1,232 @@
+*,html {
+    
+    margin: 0;
+    padding: 0;
+}
+
+
+.Navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height: 10vh;
+    background-color: brown;
+}
+
+.batas{
+    background-color: #0a1015;
+    width: 100%;
+    height: 90vh;
+}
+
+.animation {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 250px;
+    height: 250px;
+    background-color: #42a5f5;
+}
+
+span {
+    left:10%;
+    top:10%;
+    box-shadow: 0px 0px 25px #000;
+
+}
+span:nth-child(1){
+    position: absolute;
+    left: 6%;
+    top: 6%;
+    width: 220px;
+    height: 220px;
+    background-color: rgb(162, 131, 94);
+    animation: ani 3s infinite;
+    animation-delay: 0.3s;
+
+}
+
+span:nth-child(2){
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    width: 200px;
+    height: 200px;
+    background-color: #bbdefb;
+    animation: ani 3s infinite;
+    animation-delay: 0.4s;
+
+}
+span:nth-child(3){
+    position: absolute;
+    left: 14%;
+    top: 14%;
+    width: 180px;
+    height: 180px;
+    background-color: lightcoral;
+    animation: ani 3s infinite;
+    animation-delay: 0.5s;
+
+}
+span:nth-child(4){
+    position: absolute;
+    left: 18%;
+    top: 18%;
+    width: 160px;
+    height: 160px;
+    background-color:#90caf9;
+    animation: ani 3s infinite;
+    animation-delay: 0.6s;
+}
+
+span:nth-child(5){
+    position: absolute;
+    left: 22%;
+    top: 22%;
+    width: 140px;
+    height: 140px;
+    background-color:#829d4b90;
+    animation: ani 3s infinite;
+    animation-delay: 0.7s;
+
+}
+span:nth-child(6){
+    position: absolute;
+    left: 26%;
+    top: 26%;
+    width: 120px;
+    height: 120px;
+    background-color:#1abd5e;
+    animation: ani 3s infinite;
+    animation-delay: 0.8s;
+}
+span:nth-child(7){
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    width: 100px;
+    height: 100px;
+    background-color:#9b7db6;
+    animation: ani 3s infinite;
+    animation-delay: 0.9s;
+}
+
+@keyframes ani {
+ 0% {transition: 0.7s;
+ transform: rotate(0deg); }
+ 20% {
+    transition: 0.7s;
+    transform: rotate(95deg);
+}
+ 50% {
+    transition: 0.7s;
+    transform: rotate(360deg);
+}
+100% {
+    transition: 0.7s;
+    transform: rotate(0deg);
+}
+
+
+}
+
+.njobo {
+    background-color: #000000;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+.solar-system {
+    font-size: 10px;
+    width: 40em;
+    height: 40em;
+    position: relative;
+    background-color: #000000;
+   
+}
+.sun {
+    position: absolute;
+    top: 15em;
+    left: 15em;
+    width: 10em;
+    height: 10em;
+    background-color: yellow;
+    border-radius: 50%;
+    box-shadow: 0 0 3em white;
+
+
+}
+
+.earth, .moon {
+    position: absolute;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    border-width: 0.1em 0em 0 0;
+    border-radius: 50%;
+
+}
+
+.earth {
+    top: 5em;
+    left: 5em;
+    width: 30em;
+    height: 30em;
+    animation: orbit 36.5s linear infinite;
+}
+
+.moon {
+    top: 0;
+    left: 0;
+    width: 8em;
+    height: 8em;
+    animation: orbit 2.7s linear infinite;
+}
+
+.earth::before, .moon::before {
+    content:'';
+    position :absolute;
+    border-radius: 50%;
+}
+
+.earth::before {
+    top: 2.8em;
+    right: 2.8em;
+    width :3em;
+    height :3em;
+    background-color: aqua;
+
+}
+
+.moon::before {
+    top: 0.8em;
+    right: 0.2em;
+    width :1.2em;
+    height :1.2em;
+    background-color: silver;
+
+
+
+}
+
+@keyframes orbit {
+    to {transform: rotate(360deg);}
+}
+
+
+
+
+
+
+
+
