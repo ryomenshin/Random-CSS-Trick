@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+
+
 *,html {
     
     margin: 0;
@@ -12,6 +15,7 @@
     width:100%;
     height: 10vh;
     background-color: brown;
+    font-family: 'Sixtyfour', sans-serif;
 }
 
 .batas{
